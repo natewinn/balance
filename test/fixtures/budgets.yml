@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  category_id: 1
+  value: 1
+  start_date: 2014-04-29 17:20:17
+  end_date: 2014-04-29 17:20:17
+  account_id: 1
+
+two:
+  category_id: 1
+  value: 1
+  start_date: 2014-04-29 17:20:17
+  end_date: 2014-04-29 17:20:17
+  account_id: 1
