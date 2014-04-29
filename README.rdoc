@@ -1,28 +1,13 @@
-== README
+#Data Modeling#
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Create an app for your own idea
 
-Things you may want to cover:
+* Plan out the data structure, models and tables
 
-* Ruby version
+* Complete your models and your table migrations
 
-* System dependencies
+* Setup has_many, through association
 
-* Configuration
+* Include validations on models
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* At least 4 models
