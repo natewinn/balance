@@ -1,0 +1,13 @@
+= form_for @rake do |f|
+  - if @rake.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@rake.errors.count, "error")} prohibited this rake from being saved:"
+      %ul
+        - @rake.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :db
+    = f.text_field :db
+  .actions
+    = f.submit 'Save'

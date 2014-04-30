@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @bank_account.name
+%p
+  %b Type:
+  = @bank_account.type
+%p
+  %b Balance:
+  = @bank_account.balance
+%p
+  %b Account:
+  = @bank_account.account_id
+
+= link_to 'Edit', edit_bank_account_path(@bank_account)
+\|
+= link_to 'Back', bank_accounts_path

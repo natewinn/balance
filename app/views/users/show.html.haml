@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Email:
+  = @user.email
+%p
+  %b Password:
+  = @user.password
+%p
+  %b Email verified:
+  = @user.email_verified
+%p
+  %b Subscription:
+  = @user.subscription
+%p
+  %b Currency:
+  = @user.currency
+%p
+  %b Account:
+  = @user.account_id
+
+= link_to 'Edit', edit_user_path(@user)
+\|
+= link_to 'Back', users_path

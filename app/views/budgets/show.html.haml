@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Category:
+  = @budget.category_id
+%p
+  %b Value:
+  = @budget.value
+%p
+  %b Start date:
+  = @budget.start_date
+%p
+  %b End date:
+  = @budget.end_date
+%p
+  %b Account:
+  = @budget.account_id
+
+= link_to 'Edit', edit_budget_path(@budget)
+\|
+= link_to 'Back', budgets_path

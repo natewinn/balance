@@ -1,0 +1,25 @@
+%h1 Listing bank_accounts
+
+%table
+  %tr
+    %th Name
+    %th Type
+    %th Balance
+    %th Account
+    %th
+    %th
+    %th
+
+  - @bank_accounts.each do |bank_account|
+    %tr
+      %td= bank_account.name
+      %td= bank_account.type
+      %td= bank_account.balance
+      %td= bank_account.account_id
+      %td= link_to 'Show', bank_account
+      %td= link_to 'Edit', edit_bank_account_path(bank_account)
+      %td= link_to 'Destroy', bank_account, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Bank account', new_bank_account_path

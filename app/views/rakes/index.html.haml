@@ -1,0 +1,19 @@
+%h1 Listing rakes
+
+%table
+  %tr
+    %th Db
+    %th
+    %th
+    %th
+
+  - @rakes.each do |rake|
+    %tr
+      %td= rake.db
+      %td= link_to 'Show', rake
+      %td= link_to 'Edit', edit_rake_path(rake)
+      %td= link_to 'Destroy', rake, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Rake', new_rake_path

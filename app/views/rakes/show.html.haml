@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %b Db:
+  = @rake.db
+
+= link_to 'Edit', edit_rake_path(@rake)
+\|
+= link_to 'Back', rakes_path

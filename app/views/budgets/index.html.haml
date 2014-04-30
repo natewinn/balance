@@ -1,0 +1,27 @@
+%h1 Listing budgets
+
+%table
+  %tr
+    %th Category
+    %th Value
+    %th Start date
+    %th End date
+    %th Account
+    %th
+    %th
+    %th
+
+  - @budgets.each do |budget|
+    %tr
+      %td= budget.category_id
+      %td= budget.value
+      %td= budget.start_date
+      %td= budget.end_date
+      %td= budget.account_id
+      %td= link_to 'Show', budget
+      %td= link_to 'Edit', edit_budget_path(budget)
+      %td= link_to 'Destroy', budget, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Budget', new_budget_path
